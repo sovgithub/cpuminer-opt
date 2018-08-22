@@ -20,6 +20,13 @@ void argon2d_dyn_hash( void *state, const void *input );
 int scanhash_argon2d_dyn( int thr_id, struct work *work, uint32_t max_nonce,
                     uint64_t *hashes_done );
 
+// Uraniumx: version = 0x13, m_cost = variable
+bool register_argon2ad_urx_algo( algo_gate_t* gate );
+
+void argon2ad_urx_hash( void *state, const void *input );
+
+int scanhash_argon2ad_urx( int thr_id, struct work *work, uint32_t max_nonce,
+                    uint64_t *hashes_done );
 
 // Unitus: version = 0x13, m_cost = 4096.
 bool register_argon2d4096_algo( algo_gate_t* gate );
