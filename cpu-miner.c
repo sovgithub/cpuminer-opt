@@ -2987,13 +2987,16 @@ static int thread_create(struct thr_info *thr, void* func)
 
 static void show_credits()
 {
-   printf("\n");
-   printf("\x1b[01;37m");
-   printf("cpuminer-opt/baz "PACKAGE_VERSION" \n");
-   printf("icemining.ca fork - the cool pool\n");
-   printf("(https://github.com/iceminingdotca)\n");
-   printf("\033[0m");
-   printf("\n");
+	printf("\n         **********  "PACKAGE_NAME" "PACKAGE_VERSION"  *********** \n");
+	printf("     A CPU miner with multi algo support and optimized for CPUs\n");
+	printf("     with AES_NI and AVX2 and SHA extensions.\n");
+	printf("     BTC donation address: 1NBRg3Tc4PESUoTKvNMD2cdpT6BnyD8mp5\n\n");
+	printf("     cpuminer-opt is a fork of cpuminer-multi by TPruvot with optimizations imported from other miners developped by\n     lucas Jones, djm34, Wolf0, pooler, Jeff garzik, ig0tik3d, elmad, palmd, and Optiminer, Jay D Dee\n     with additional optimizations by: baz, Icemining.ca, Hash-Kings");
+   //printf("cpuminer-opt/baz "PACKAGE_VERSION" \n");
+  // printf("icemining.ca fork - the cool pool\n");
+  // printf("(https://github.com/iceminingdotca)\n");
+  // printf("\033[0m");
+  // printf("\n");
 }
 
 
